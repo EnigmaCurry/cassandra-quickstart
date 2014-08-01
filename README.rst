@@ -32,6 +32,13 @@ Windows
 -------
 Windows compatibility is broken in this 0.1 release.
 
+Cassandra Version
+-----------------
+
+By default, cassandra-quickstart will install the latest stable version of cassandra. If you wish, you can install a different version by passing the -v parameter. For example:
+
+  cassandra-quickstart install -v binary:2.1.0-rc4
+
 Commands
 --------
 
