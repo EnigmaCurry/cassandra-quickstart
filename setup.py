@@ -4,7 +4,8 @@ from setuptools import setup
 install_requires = [
     'argparse',
     'virtualenv',
-    'six'
+    'six',
+    'pip'
 ]
 
 classifiers = [

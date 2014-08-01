@@ -6,6 +6,7 @@ import csv
 import shlex
 import platform
 
+import pip
 import argparse
 import virtualenv
 
@@ -116,6 +117,17 @@ def install(version='stable', cluster_name='cassandra', **kwargs):
         # If any problem occurs, clean things up by destroying the cluster:
         destroy(cluster_name)
         raise
+
+    
+    # Install the driver on cluster install because we can ensure that
+    # it gets installed via pip this way. easy_install on MacOS does
+    # not work for installing the driver. 
+    try:
+        import cassandra
+    except ImportError:
+        pip.main(['install','cassandra-driver'])
+        print("Cassandra driver installed.")
+
     print("Cassandra started.")
 
 def destroy(cluster_name='cassandra', **kwargs):
