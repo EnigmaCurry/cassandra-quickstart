@@ -12,17 +12,20 @@ you have Python installed (2.7 tested) which every Linux and Mac
 system should have pre-installed. In the future I plan to distribute
 an .exe for Windows that bundles all the requirements.
 
-**Windows is currently broken in this 0.1 release.**
+Ubuntu / Debian:
+---------------
+- sudo apt-get install python-setuptools
+- sudo easy_install cassandra-quickstart
+- cassandra-quickstart install
 
-Install
---------
+Mac OSX
+-------
+- sudo easy_install cassandra-quickstart
+- cassandra-quickstart install
 
-    easy_install cassandra-quickstart
-
-One line to create and start a cluster
---------------------------------------
-
-    cassandra-quickstart install
+Windows
+-------
+Windows compatibility is broken in this 0.1 release.
 
 Commands
 --------
