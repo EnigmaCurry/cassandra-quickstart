@@ -14,15 +14,31 @@ an .exe for Windows that bundles all the requirements.
 
 Ubuntu / Debian:
 ---------------
-- sudo apt-get install python-setuptools
-- sudo easy_install cassandra-quickstart
-- cassandra-quickstart install
+Install setuptools:
+
+  sudo apt-get install python-setuptools
+
+Install cassandra-quickstart:
+
+  sudo easy_install cassandra-quickstart
+
+Install and start Cassandra:
+
+  cassandra-quickstart install
 
 Mac OSX
 -------
-- sudo python -m easy_install -U setuptools 
-- sudo python -m easy_install cassandra-quickstart
-- cassandra-quickstart install
+Upgrade setuptools (MacOS ships with a really old version):
+
+  sudo python -m easy_install -U setuptools 
+
+Install cassandra-quickstart:
+
+  sudo python -m easy_install cassandra-quickstart
+
+Install and start Cassandra:
+
+  cassandra-quickstart install
 
 Windows
 -------
