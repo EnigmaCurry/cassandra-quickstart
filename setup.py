@@ -23,7 +23,7 @@ classifiers.extend([
 
 setup(
     name = 'cassandra-quickstart',
-    version = '0.1',
+    version = '0.1.1',
     description = 'Quickstart tool for installing and managing Cassandra in development environments',
     author = 'Ryan McGuire',
     author_email = 'ryan@datastax.com',
