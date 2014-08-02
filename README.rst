@@ -3,7 +3,7 @@ Cassandra Quickstart
 
 This tool downloads Cassandra, Java, ccm, and drivers into your home
 directory (~/.cassandra-quickstart) and starts a single node Cassandra
-cluster. This is meant to be useful for protyping and development
+cluster. This is meant to be useful for prototyping and development
 tasks, not for production.
 
 The idea is to have a one-liner to install everything you need to use
